@@ -22,7 +22,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, "../frontend/build"))); // Assuming your React app is built into the 'build' folder
+//app.use(express.static(path.join(__dirname, "../frontend/build"))); // Assuming your React app is built into the 'build' folder
 
 // Define API routes here
 app.get("/api/hello", (req, res) => {
