@@ -94,7 +94,12 @@ app.delete("/delete/:id", (req, res) => {
 app.post("/upload", upload.array("files", 10), async (req, res) => {
 	if (!req.files || req.files.length === 0) {
 		return res.status(400).json({ error: "File upload failed" });
-	}
+  }
+  
+  app.get("/", async (req, res) => {
+    res.send("Hello World");
+  }
+  ); 
 
 	// for (const file of req.files) {
 	//   if (file.originalname) {
