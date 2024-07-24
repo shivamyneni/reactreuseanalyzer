@@ -1,0 +1,21 @@
+module.exports = {
+  rules: {
+    "reactreuse-rule": require("./lib/rules/reactreuse-rule"),
+    "component-composition": require("./lib/rules/component-composition"),
+    "hooks-usage": require("./lib/rules/hooks-usage"),
+    "descriptive-props": require("./lib/rules/descriptive-props"),
+    "prop-spreading": require("./lib/rules/prop-spreading"),
+    "prop-naming": require("./lib/rules/prop-naming"),
+    "inline-styling": require("./lib/rules/inline-styling"),
+    "component-naming": require("./lib/rules/component-naming"),
+    "default-props": require("./lib/rules/default-props"),
+    "uncontrolled-component": require("./lib/rules/uncontrolled-component"),
+    "component-size": require("./lib/rules/component-size"),
+    // "consistent-imports": require("./lib/rules/consistent-import"),
+    "consistent-jsx-spacing": require("./lib/rules/consistent-jsx-spacing"),
+    "inline-event-binding": require("./lib/rules/inline-event-binding"),
+    "state-init-constructor": require("./lib/rules/state-init-constructor"),
+    "redundant-function-declaration": require("./lib/rules/redundant-function"),
+    "redundant-function-code": require("./lib/rules/redundant-function-code"),
+  },
+};

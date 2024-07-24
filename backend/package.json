@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "node server for reactreuse analyzer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/eslint-parser": "^7.23.3",
+    "cors": "^2.8.5",
+    "eslint": "^8.53.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-reactreuse-plugin": "file:/Users/nagasivasaimyneni/Codebase/reactreuseanalyzer/backend/reactreuse-plugin"
+  }
+}
