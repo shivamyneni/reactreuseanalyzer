@@ -176,10 +176,6 @@ app.get("/lint", async (req, res) => {
 	}
 });
 
-// React app route
-app.get("*", (req, res) => {
-	res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
-});
 
 // Error handling middleware
 app.use((err, req, res, next) => {
