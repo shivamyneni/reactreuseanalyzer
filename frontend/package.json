@@ -17,6 +17,7 @@
     "axios": "^1.6.0",
     "firebase": "^10.12.1",
     "framer-motion": "^10.16.5",
+    "global": "^4.4.0",
     "postcss": "^8.4.30",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
