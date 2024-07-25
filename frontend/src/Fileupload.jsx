@@ -7,7 +7,8 @@ import logo from "./assets/images/logo.png";
 import deleteLogo from "./assets/images/trash.svg";
 
 export default function Fileupload() {
-	const serverUrl = process.env.SERVER_API_URL;
+	const serverUrl = process.env.REACT_APP_SERVER_API_URL;
+
 	const history = useNavigate();
 	const [files, setFiles] = React.useState([]); // array of files
 	const [error, setError] = React.useState(false);
@@ -59,6 +60,7 @@ export default function Fileupload() {
 	};
 
 	React.useEffect(() => {
+		console.log(serverUrl);
 		deleteAllFiles();
 	}, []);
 	const handleFileUpload = async () => {

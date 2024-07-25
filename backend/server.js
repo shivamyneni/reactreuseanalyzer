@@ -9,20 +9,21 @@ const port = process.env.PORT || 3001;
 const linter = new eslint.ESLint();
 const { Linter, RuleTester } = require("eslint");
 const { CLIEngine } = require("eslint");
-
+const dotenv = require("dotenv");
 // Define an array to store linting results
 const lintingResults = [];
 const linterx = new Linter();
 const rules = linterx.getRules();
 
+dotenv.config({path:['./.env.development','./.env.production']});
 const corsOptions = {
-	origin: "https://reactreuseanalyzer-frontend.onrender.com", // frontend URI (ReactJS)
+	origin: process.env.FRONTEND_URL , // frontend URI (ReactJS)
 };
 
 app.use(cors(corsOptions));
 
 // Serve static files from the React app
-//app.use(express.static(path.join(__dirname, "../frontend/build"))); // Assuming your React app is built into the 'build' folder
+// app.use(express.static(path.join(__dirname, "../frontend/build"))); // Assuming your React app is built into the 'build' folder
 
 // Define API routes here
 app.get("/api/hello", (req, res) => {
@@ -94,12 +95,7 @@ app.delete("/delete/:id", (req, res) => {
 app.post("/upload", upload.array("files", 10), async (req, res) => {
 	if (!req.files || req.files.length === 0) {
 		return res.status(400).json({ error: "File upload failed" });
-  }
-  
-  app.get("/", async (req, res) => {
-    res.send("Hello World");
-  }
-  ); 
+	}
 
 	// for (const file of req.files) {
 	//   if (file.originalname) {
@@ -180,7 +176,6 @@ app.get("/lint", async (req, res) => {
 		console.error("Error while linting files:", err);
 	}
 });
-
 
 // Error handling middleware
 app.use((err, req, res, next) => {
