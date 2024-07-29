@@ -110,8 +110,8 @@ export default function Fileupload() {
 	return (
 		<div className="h-full w-full flex justify-center flex-col items-center">
 			<Navbar />
-			<form className="w-screen flex mt-[30px] flex-row justify-start">
-				<div className="w-1/2 px-4 lg:px-6">
+			<form className="w-screen flex mt-[30px] xs:Flex-col sm:flex-col md:flex-row justify-start">
+				<div className="xs:w-screen sm:w-screen md:w-1/2 px-4 lg:px-6">
 					<div className=" pb-12">
 						<h2 className="text-2xl font-bold leading-7 text-gray-900">
 							Scan the codebase!!
@@ -129,7 +129,7 @@ export default function Fileupload() {
 									Upload Files
 								</label>
 
-								<form className="mt-2 flex justify-center items-center aspect-video rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
+								<form className="xs:w-screen sm:w-screen md:w-full mt-2 flex justify-center items-center aspect-video rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
 									<div className="text-center">
 										<PhotoIcon
 											className="mx-auto h-12 w-12 text-gray-300"
@@ -140,7 +140,7 @@ export default function Fileupload() {
 												htmlFor="file-upload"
 												className="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
 												<p className="text-md">Upload a file</p>
-
+												<p className="pl-1 text-md ">or drag and drop</p>
 												<input
 													id="file-upload"
 													name="files"
@@ -151,7 +151,6 @@ export default function Fileupload() {
 													multiple="true"
 												/>
 											</label>
-											<p className="pl-1 text-md ">or drag and drop</p>
 										</div>
 										<p className="text-md leading-5 text-gray-600">
 											.JS, .JSX, .TS, .TSX
