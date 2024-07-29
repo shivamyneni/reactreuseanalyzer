@@ -2,7 +2,8 @@
 
 **ReactReuseAnalyzer** is a React web application designed to scan and analyze React files with a Node.js backend using ESLint. The application provides detailed code analysis and actionable insights to improve code quality.
 
-![ReactReuseAnalyzer](https://example.com/banner.png) <!-- You can add a banner image to make it visually appealing -->
+**you can access this website with this link** https://reactreuseanalyzer-frontend.onrender.com
+![ReactReuseAnalyzer](https://firebasestorage.googleapis.com/v0/b/reactreuseanalyzer.appspot.com/o/reactreuseanalyzer%2FScreenshot%202024-07-29%20at%2011.03.00%E2%80%AFAM.png?alt=media&token=1b307512-37b3-464d-9fbc-5d2fbd8a0c10) <!-- You can add a banner image to make it visually appealing -->
 
 ## Features
 
@@ -13,13 +14,13 @@
 
 ## Screenshots
 
-![Upload Files](https://example.com/upload_screenshot.png) <!-- Replace with actual screenshot URLs -->
+![Upload Files] <!-- Replace with actual screenshot URLs -->
 *Upload JavaScript, JSX, TypeScript, and TSX files for analysis*
 
-![Code Analysis](https://example.com/analysis_screenshot.png)
+![Code Analysis]
 *Detailed code analysis with ESLint*
 
-![Actionable Insights](https://example.com/insights_screenshot.png)
+![Actionable Insights]
 *Actionable insights, suggestions, reuse tips, and error reports*
 
 ## Installation
