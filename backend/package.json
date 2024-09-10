@@ -25,6 +25,6 @@
 	},
 	"devDependencies": {
 		"eslint-plugin-react": "^7.33.2",
-		"eslint-plugin-reactreuse-plugin": "file:/Users/nagasivasaimyneni/Codebase/reactreuseanalyzer/backend/reactreuse-plugin"
+		"eslint-plugin-reactreuse-plugin": "./reactreuse-plugin"
 	}
 }

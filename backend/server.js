@@ -48,6 +48,8 @@ const upload = multer({ storage });
 //     res.status(400).json({ error: "File upload failed" });
 //   }
 // });
+
+
 app.delete("/delete-files", (req, res) => {
 	fs.readdir("uploads/", (err, files) => {
 		if (err) {
