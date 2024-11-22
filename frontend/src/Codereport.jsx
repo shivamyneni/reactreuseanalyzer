@@ -92,6 +92,9 @@ export default function Codereport() {
 				</div>
 				{lintingResults &&
 					lintingResults.map((key, index) => {
+						if (index == 0) {
+							return (<></>)
+						}
 						return (
 							<CodeErrorComponent name={key.fileName} errors={key.results[0]} />
 						);

@@ -25,7 +25,7 @@ const CodeErrorComponent = (props) => {
 			<div className="flex bg-white w-full flex-row justify-between items-center px-[20px] py-[5px] rounded-t-md border-b-[2px] font-medium">
 				<p>{props.name}</p>
 				<div className="flex flex-row items-center justify-between ">
-					<p>{props.errors.length}</p>
+					<p>{props.errors?.length}</p>
 					{open ? (
 						<ChevronUpIcon
 							color="black"

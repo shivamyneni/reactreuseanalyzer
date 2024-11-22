@@ -18,8 +18,12 @@ const rules = linterx.getRules();
 dotenv.config();
 const corsOptions = {
 	origin: process.env.FRONTEND_URL, // frontend URI (ReactJS)
+	methods: ["GET", "POST", "DELETE", "PUT"],
+	allowedHeaders: ["Content-Type"],
 };
 
+
+console.log(process.env.FRONTEND_URL);
 app.use(cors(corsOptions));
 
 // Serve static files from the React app
