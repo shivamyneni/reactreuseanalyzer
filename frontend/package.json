@@ -1,7 +1,6 @@
 {
   "name": "reactreuseanalyzer",
   "version": "0.1.0",
-  "proxy": "http://localhost:3001",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
