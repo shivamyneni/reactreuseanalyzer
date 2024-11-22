@@ -57,6 +57,7 @@ app.delete("/delete-files", (req, res) => {
 		}
 
 		files.forEach((file) => {
+			if (file === ".gitkeep") return;
 			fs.unlink(`${"uploads/"}${file}`, (unlinkErr) => {
 				if (unlinkErr) {
 					console.error(`Error deleting file ${file}:`, unlinkErr);
