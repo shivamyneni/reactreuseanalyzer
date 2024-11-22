@@ -13,6 +13,7 @@
 		"@babel/eslint-parser": "^7.23.3",
 		"cors": "^2.8.5",
 		"dotenv": "^16.4.5",
+		"dotenv-flow": "^4.1.0",
 		"eslint": "^8.53.0",
 		"eslint-plugin-jsx-a11y": "^6.8.0",
 		"eslint-plugin-react-hooks": "^4.6.0",

@@ -9,13 +9,13 @@ const port = process.env.PORT || 3001;
 const linter = new eslint.ESLint();
 const { Linter, RuleTester } = require("eslint");
 const { CLIEngine } = require("eslint");
-const dotenv = require("dotenv");
+const dotenv = require("dotenv-flow");
 // Define an array to store linting results
 const lintingResults = [];
 const linterx = new Linter();
 const rules = linterx.getRules();
 
-dotenv.config({ path: ["./.env.development", "./.env.production"] });
+dotenv.config();
 const corsOptions = {
 	origin: process.env.FRONTEND_URL, // frontend URI (ReactJS)
 };
