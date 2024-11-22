@@ -15,9 +15,9 @@ const lintingResults = [];
 const linterx = new Linter();
 const rules = linterx.getRules();
 
-dotenv.config({path:['./.env.development','./.env.production']});
+dotenv.config({ path: ["./.env.development", "./.env.production"] });
 const corsOptions = {
-	origin: process.env.FRONTEND_URL , // frontend URI (ReactJS)
+	origin: process.env.FRONTEND_URL, // frontend URI (ReactJS)
 };
 
 app.use(cors(corsOptions));
@@ -48,7 +48,6 @@ const upload = multer({ storage });
 //     res.status(400).json({ error: "File upload failed" });
 //   }
 // });
-
 
 app.delete("/delete-files", (req, res) => {
 	fs.readdir("uploads/", (err, files) => {
@@ -152,12 +151,15 @@ function filterRulesByRule(ruleId) {
 }
 
 app.get("/lint", async (req, res) => {
+	console.log("/lint called");
 	try {
 		const files = fs.readdirSync("uploads/");
-
+		const filePath = path.join("uploads/");
+		console.log(filePath);
 		const lintingResults = [];
 		for (const file of files) {
 			const filePath = path.join("uploads/", file);
+			console.log(filePath);
 			const fileContent = fs.readFileSync(filePath, "utf8");
 
 			// Perform ESLint linting on the file content
